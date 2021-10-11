@@ -1,0 +1,4 @@
+<div>
+  <input type="checkbox" [checked]="isChecked" (change)="onChange.emit()" [id]="name" [name]="name" />
+  <label [for]="name"><ng-content></ng-content></label>
+</div>

@@ -1,0 +1,49 @@
+<div class="filter">
+  <h4 class="label filter-label">Filters:</h4>
+  <app-checkbox
+    [isChecked]="tableService.filter.getValue().active"
+    (onChange)="onChangeActive()"
+    name="active"
+    >Active</app-checkbox
+  >
+  <app-checkbox
+    [isChecked]="tableService.filter.getValue().inactive"
+    (onChange)="onChangeInactive()"
+    name="inactive"
+    >Inactive</app-checkbox
+  >
+
+  <hr />
+
+  <h4 class="label sort-label">Sort by:</h4>
+  <app-radio-button
+    name="sort"
+    value="email"
+    [defaultChecked]="true"
+    (onChange)="onChangeSort($event)"
+    >Email</app-radio-button
+  >
+  <app-radio-button
+    name="sort"
+    value="balance"
+    (onChange)="onChangeSort($event)"
+    >Balance</app-radio-button
+  >
+
+  <hr />
+
+  <h4 class="label sort-type-label">Sort type:</h4>
+  <app-radio-button
+    name="sortType"
+    value="asc"
+    (onChange)="onChangeSortType($event)"
+    [defaultChecked]="true"
+    >ASC</app-radio-button
+  >
+  <app-radio-button
+    name="sortType"
+    value="desc"
+    (onChange)="onChangeSortType($event)"
+    >DESC</app-radio-button
+  >
+</div>

@@ -1,0 +1,27 @@
+:host {
+
+  tbody {
+    display: contents;
+  }
+
+  .children-row {
+    background: #e7e7e7;
+  }
+
+  td {
+    color: darkgrey;
+    text-align: center;
+    border-right: 1px solid rgb(243, 243, 243);
+
+    margin: 0;
+    padding: 0.5rem;
+
+    :last-child {
+      border-right: 0;
+    }
+  }
+
+  .arrow {
+    cursor: pointer;
+  }
+}

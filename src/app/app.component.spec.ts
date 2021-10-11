@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'garage'`, () => {
+  it(`should have as title 'angular-test-table'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('garage');
+    expect(app.title).toEqual('angular-test-table');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('garage app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-test-table app is running!');
   });
 });

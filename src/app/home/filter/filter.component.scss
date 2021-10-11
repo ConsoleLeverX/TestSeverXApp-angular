@@ -1,0 +1,29 @@
+.filter {
+    padding: 0 20px;
+
+    hr {
+      border: none;
+      color: #d1d1d1;
+      background-color: #d1d1d1;
+      height: 1px;
+    }
+
+    .label {
+      border-radius: 10px;
+      padding: 5px 12px;
+      color: whitesmoke;
+      display: inline-block;
+    }
+
+    .sort-label {
+      background: #faa745;
+    }
+
+    .filter-label {
+      background: #00d463;
+    }
+
+    .sort-type-label {
+      background: #5fbeed;
+    }
+  }

@@ -1,0 +1,15 @@
+<table>
+  <thead>
+    <tr>
+      <td></td>
+      <td>ID</td>
+      <td>Active</td>
+      <td>Balance</td>
+      <td>Name</td>
+      <td>Email</td>
+    </tr>
+  </thead>
+  <ng-container *ngFor="let user of users">
+    <tbody app-table-row [user]="user"></tbody>
+  </ng-container>
+</table>

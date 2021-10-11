@@ -1,0 +1,13 @@
+<tr [class]="isChildren ? 'children-row' : undefined">
+  <td [class]="isSubRowExists ? 'arrow' : undefined" (click)="isOpen = !isOpen">
+    {{ isSubRowExists ? (isOpen ? "&#9660;" : "&#9654;") : null }}
+  </td>
+  <td>{{ user.id }}</td>
+  <td>{{ user.isActive }}</td>
+  <td>{{ user.balance }}</td>
+  <td>{{ user.name }}</td>
+  <td>{{ user.email }}</td>
+</tr>
+<ng-container *ngIf="isOpen">
+  <tbody app-table-row *ngFor="let user of user.subRows" [isChildren]="true" [user]="user"></tbody>
+</ng-container>

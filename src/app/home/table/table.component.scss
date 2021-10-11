@@ -1,0 +1,52 @@
+:host {
+  width: 80%;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+
+    thead {
+      border-radius: 20px;
+
+      tr {
+        background-color: #2b3048;
+        color: white;
+        text-align: center;
+      }
+    }
+
+    tbody {
+      background: #fcfcfc;
+
+      .children-row {
+        background: #e7e7e7;
+      }
+
+      tr,
+      td {
+        color: darkgrey;
+        text-align: center;
+        border-right: 1px solid rgb(243, 243, 243);
+      }
+    }
+
+    tr {
+      :last-child {
+        td {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    td {
+      margin: 0;
+      padding: 0.5rem;
+
+      :last-child {
+        border-right: 0;
+      }
+    }
+  }
+}
